@@ -10,4 +10,8 @@ export default defineConfig({
         }),
         tailwindcss(),
     ],
+    build: {
+        manifest: true,
+        outDir: 'public/build',  // Đảm bảo Vite build đúng vào public/build
+    },
 });
